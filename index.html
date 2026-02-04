@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORG IMPERIAL</title>
+  <meta name="theme-color" content="#4b0082">
+  <style>
+    :root{
+      --bg:#0b0614;
+      --card:#190d2b;
+      --card-2:#21113c;
+      --purple:#7a2cff;
+      --purple-2:#9b5bff;
+      --text:#ffffff;
+      --muted:#d8cfff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:inherit}
+    .wrap{max-width:1000px;margin:auto;padding:0 16px 60px}
+
+    header{
+      background: linear-gradient(180deg,#2a1350 0%, #190d2b 100%);
+      text-align:center;
+      padding:50px 16px 28px;
+      position:relative;
+      box-shadow:0 10px 40px rgba(122,44,255,.25) inset;
+    }
+    header img{
+      max-width:460px; width:min(92%, 460px); height:auto; display:block; margin:0 auto 10px;
+      filter: drop-shadow(0 12px 32px rgba(122,44,255,.35));
+    }
+    .cta-bar{
+      display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:14px 0 0;
+    }
+    .btn{
+      display:inline-block; text-decoration:none; font-weight:800;
+      padding:14px 18px; border-radius:14px; border:2px solid transparent;
+      background:var(--purple);
+      color:#0b0614; letter-spacing:.2px; box-shadow:0 6px 24px rgba(122,44,255,.35);
+      transition:transform .08s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:hover{transform:translateY(-1px); box-shadow:0 10px 28px rgba(122,44,255,.45); background:var(--purple-2)}
+    .btn.outline{background:transparent;color:var(--text);border-color:var(--purple)}
+    .btn.outline:hover{background:rgba(122,44,255,.12)}
+
+    nav{
+      position:sticky; top:0; z-index:9;
+      backdrop-filter: blur(6px);
+      background:rgba(15,10,25,.65);
+      border-bottom:1px solid rgba(122,44,255,.25);
+    }
+    nav .wrap{display:flex; gap:18px; justify-content:center; padding:10px 16px}
+    nav a{padding:10px 12px; border-radius:10px; text-decoration:none; color:var(--muted); font-weight:700}
+    nav a:hover{background:rgba(122,44,255,.15); color:var(--text)}
+
+    section{margin:38px 0 0}
+    .card{
+      background:linear-gradient(180deg,var(--card) 0%, var(--card-2) 100%);
+      border:1px solid rgba(122,44,255,.25);
+      border-radius:18px; padding:22px;
+      box-shadow:0 0 0 8px rgba(122,44,255,.06), 0 20px 40px rgba(0,0,0,.35);
+    }
+    h2{
+      margin:0 0 14px; font-size:28px; line-height:1.15;
+      color:var(--purple-2); text-shadow:0 0 22px rgba(122,44,255,.35);
+    }
+    p{color:var(--muted); margin:10px 0 0; line-height:1.6}
+
+    .banner{
+      text-align:center; margin:26px auto 10px; max-width:820px;
+    }
+    .banner a{
+      display:block; text-decoration:none; padding:16px;
+      border-radius:16px; font-weight:900; letter-spacing:.2px;
+      background:var(--purple); color:#0b0614;
+      box-shadow:0 10px 28px rgba(122,44,255,.45);
+    }
+    .banner a:hover{background:var(--purple-2)}
+
+    .grid{display:grid; gap:14px}
+    @media (min-width:700px){ .grid{grid-template-columns:repeat(2,1fr)} }
+
+    form{display:grid; gap:16px; margin-top:6px}
+    label{font-weight:800; color:var(--muted)}
+    input, select, textarea{
+      width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(122,44,255,.35);
+      background:#120a22; color:var(--text); font-size:16px; outline:none;
+      box-shadow:inset 0 0 0 2px rgba(122,44,255,.08);
+    }
+    input:focus, select:focus, textarea:focus{box-shadow:0 0 0 3px rgba(122,44,255,.35), inset 0 0 0 2px rgba(122,44,255,.2)}
+    .checklist{display:flex; flex-wrap:wrap; gap:10px 18px; margin-top:-6px}
+    .checklist label{display:flex; align-items:center; gap:8px; font-weight:700}
+    .checklist input[type="checkbox"]{width:18px; height:18px; accent-color:var(--purple)}
+
+    .submit{margin-top:8px; display:flex; gap:12px; flex-wrap:wrap; align-items:center}
+    .note{font-size:13px; color:#bfb2ff}
+
+    footer{
+      text-align:center; padding:28px 16px; color:#bfb2ff;
+      border-top:1px solid rgba(122,44,255,.25); margin-top:40px
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.postimg.cc/CxjrHFHK/Lideran-a-imperial-20250809-144309.jpg" alt="Logo ORG Imperial">
+    <div class="cta-bar">
+      <a class="btn" href="https://www.instagram.com/imperial_ofcimp?igsh=MTk5YmQ1cDhtaHB0ZQ==" target="_blank" rel="noopener">Instagram Oficial</a>
+      <a class="btn outline" href="https://tiktok.com/@imperial.gamer.of?_t=ZM-8whrpcC6wgK&_r=1" target="_blank" rel="noopener">TikTok Oficial</a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="wrap">
+      <a href="#sobre">Sobre</a>
+      <a href="#links">Links</a>
+      <a href="#xtr">X-Treino</a>
+      <a href="#recrutamento">Recrutamento</a>
+      <a href="#manto">Manto</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+
+    <section id="sobre" class="card">
+      <h2>Sobre a ORG Imperial</h2>
+      <p>A ORG IMPERIAL atua no cenário competitivo e comunitário, com foco em evolução, disciplina e união. Aqui você encontra estrutura para treinar, competir e crescer no jogo, além do nosso manto oficial para representar a família Imperial.</p>
+    </section>
+
+    <div class="banner">
+      <a href="https://chat.whatsapp.com/GLvvqZLn0px4u2882RregA?mode=ems_copy_c" target="_blank" rel="noopener">
+        Esse link é o grupo de X-treino da nossa org.
+      </a>
+    </div>
+
+    <section id="links" class="card">
+      <h2>Links Importantes</h2>
+      <div class="grid">
+        <a class="btn" href="https://chat.whatsapp.com/E81wIy4OLqt1P80FzOIURZ?mode=ems_copy_t" target="_blank" rel="noopener">Recrutamento</a>
+        <a class="btn" href="https://chat.whatsapp.com/E81wIy4OLqt1P80FzOIURZ?mode=ems_copy_t" target="_blank" rel="noopener">Recrutamento Competitivo</a>
+        <a class="btn" href="https://chat.whatsapp.com/GLvvqZLn0px4u2882RregA?mode=ems_copy_c" target="_blank" rel="noopener">X-Treino Imperial</a>
+        <a class="btn" href="https://fluzpdesign.com/produtos/imperial/" target="_blank" rel="noopener">Manto Oficial</a>
+      </div>
+    </section>
+
+    <section id="xtr" class="card">
+      <h2>X-Treino da org</h2>
+      <p>Nosso X-treino reúne jogadores da Imperial e outras guildas ou lines para treinos organizados, com horários definidos, análise de desempenho e foco em:</p>
+      <ul>
+        <li>Rotina de treinos semanais e scrims;</li>
+        <li>Comunicação e disciplina em call;</li>
+        <li>Evolução individual e coletiva.</li>
+      </ul>
+      <p>Entre no grupo de X-treino pelo botão acima e siga as orientações fixadas.</p>
+    </section>
+
+    <section id="recrutamento" class="card">
+      <h2>Formulário de Recrutamento</h2>
+
+      <form action="https://formsubmit.co/pedrocosta776622@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_cc" value="pedrocosta776632@icloud.com">
+
+        <div>
+          <label for="nick">Nick</label>
+          <input type="text" id="nick" name="nick" placeholder="Seu nick no jogo" required>
+        </div>
+
+        <div>
+          <label for="idjogador">ID</label>
+          <input type="text" id="idjogador" name="idjogador" placeholder="Seu ID no jogo" required>
+        </div>
+
+        <div>
+          <label for="idade">Idade</label>
+          <input type="number" id="idade" name="idade" min="10" max="100" placeholder="Sua idade" required>
+        </div>
+
+        <div>
+          <label for="whats">WhatsApp</label>
+          <input type="tel" id="whats" name="whats" placeholder="DDD + número" required>
+        </div>
+
+        <div>
+          <label for="patentes">Patente BR e CS</label>
+          <input type="text" id="patentes" name="patentes" placeholder="Ex: Mestre 1 (BR) | Ouro (CS)">
+        </div>
+
+        <div>
+          <label for="trocanick">Possui troca de Nick?</label>
+          <select id="trocanick" name="trocanick" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="seteK">Consegue pegar mais de 7k de honras semanais?</label>
+          <select id="seteK" name="seteK" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Foco principal</label>
+          <div class="checklist">
+            <label><input type="checkbox" name="foco" value="guerra"> Guerra de Guilda</label>
+            <label><input type="checkbox" name="foco" value="rank"> Rank</label>
+            <label><input type="checkbox" name="foco" value="honras"> Honras</label>
+          </div>
+          <p class="note">Você pode marcar mais de um foco.</p>
+        </div>
+
+        <div class="submit">
+          <button type="submit" class="btn">Enviar Formulário</button>
+          <span class="note">⚠️ Se aparecer algum erro, fique tranquilo: é normal do nosso site. Seu formulário foi enviado com sucesso!</span>
+          <a class="btn outline" href="https://chat.whatsapp.com/E81wIy4OLqt1P80FzOIURZ?mode=ems_copy_t" target="_blank" rel="noopener">Entrar no grupo de Recrutamento</a>
+        </div>
+      </form>
+    </section>
+
+    <section id="manto" class="card">
+      <h2>Camisa Oficial (Manto Imperial)</h2>
+      <p>Garanta seu manto oficial e personalize com seu nome nas costas. Representa a identidade, união e força da Imperial.</p>
+      <p><a class="btn" href="https://fluzpdesign.com/produtos/imperial/" target="_blank" rel="noopener">Comprar Manto Oficial</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 ORG IMPERIAL — Todos os direitos reservados •
+    <a href="https://www.instagram.com/imperial_ofcimp?igsh=MTk5YmQ1cDhtaHB0ZQ==" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+</body>
+</html>
